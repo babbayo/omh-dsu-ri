@@ -6,6 +6,8 @@ mongo:
 # this Compose file adds initialization scripts to the vanilla image and runs that. The scripts create the database
 # tables necessary to store credentials and tokens.
 postgres:
+  environment:
+    - POSTGRES_PASSWORD=qwer1234
   build: resources/rdbms/postgresql
 
 authorizationserver:

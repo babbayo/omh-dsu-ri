@@ -1,0 +1,13 @@
+###
+
+# curl -H "Content-Type:application/json" --data '{"username": "testUser", "password": "testUserPassword"}' http://host:8082/users
+POST http://localhost:8082/users
+Content-Type: application/json
+
+{
+  "username": "testUser2",
+  "password": "testUserPassword"
+}
+
+###
+
